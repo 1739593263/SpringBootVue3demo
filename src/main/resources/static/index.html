@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Your first Spring application</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <p><a href="/hello">Greet the world!</a></p>
+
+  <form action="/hello" method="GET" id="nameForm">
+    <div>
+      <label for="nameField">How should the app call you?</label>
+      <input name="myName" id="nameField">
+      <button>Greet me!</button>
+    </div>
+  </form>
+
+  <section>
+    <div class="product">
+      <img src="https://i.imgur.com/EHyR2nP.png" alt="The cover of Stubborn Attachments" />
+      <div class="description">
+        <h3>Stubborn Attachments</h3>
+        <h5>$20.00</h5>
+      </div>
+    </div>
+    <form action="/create-payment-intent" method="POST">
+      <button type="submit" id="checkout-button">Checkout</button>
+    </form>
+  </section>
+</body>
+</html>
